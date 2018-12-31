@@ -1,0 +1,16 @@
+.header {
+  background-color:aquamarine;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+a {
+  color: #27176e;
+  font-size: 0.75em;
+  text-decoration: underline;
+  margin-left: 20px;
+}
+.logout {
+  font-size: 0.75em;
+  margin-left: 20px;
+}

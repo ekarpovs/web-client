@@ -1,0 +1,18 @@
+<div fxLayout="row" fxLayoutAlign="center" class="login">
+  <div>
+    <form class="form-signin">
+      <h3>Login</h3>
+      <div>
+        <label for="username" class="sr-only">Username:</label>
+        <input type="text" autocomplete required autofocus id="username" #username placeholder="Username/Email"/>
+      </div>
+      <div>
+        <label for="password" class="sr-only">Password:</label>
+        <input type="password" class="form-control" autocomplete required id="password" #password placeholder="Password"/>
+      </div>
+      <div>
+        <button type="button" class="btn btn-lg" (click)="login(username.value, password.value)">Login</button>
+      </div>
+    </form>
+  </div>
+</div>

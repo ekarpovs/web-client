@@ -1,0 +1,22 @@
+<div class="header"  *ngIf="jwt.loggedIn">
+  <span class="container spacer" fxLayout="row wrap"
+                         fxLayout.xs="column"
+                         fxLayoutAlign="start center end"
+                         fxLayoutGap="10px"
+                         fxLayoutGap.xs="0">
+    <span class="logo">
+        <span><img height="16px" src="./src/app/core/components/header/header-icon.ico"></span>
+        <span>Analyzer</span>
+    </span>
+    <span class="links" *ngFor="let link of activeLinks">
+      <a routerLink={{link.routerLink}}>{{link.name}}</a>
+    </span>
+    <span class="spacer"></span>
+    <span class="logout">
+      <span>Signeg in as: {{jwt.loggedInUser}}</span>
+      <button mat-icon-button (click)="logout()">
+        <i class="material-icons" title="Sign out">exit_to_app</i>
+      </button>
+    </span>
+  </span>
+</div>
