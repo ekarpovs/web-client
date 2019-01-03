@@ -20,15 +20,6 @@ import { CanActivateAutGuard } from './guards/can-activate-aut.guard';
   imports: [
     CommonModule,
     HttpClientModule,
-    // JwtModule.forRoot({
-    //   config: {
-    //     tokenGetter: function  tokenGetter() {
-    //          return      sessionStorage.getItem('sid');
-    //         },
-    //     whitelistedDomains: ['localhost:3000'],
-    //     blacklistedRoutes: ['http://localhost:3000/auth/login']
-    //   }
-    // }),
     CoreRoutingModule,
     FlexLayoutModule,
     MaterialModule
