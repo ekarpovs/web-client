@@ -1,4 +1,6 @@
-# Client
+# Angular 6 based Client
+
+[![License](https://img.shields.io/badge/license-MIT-red.svg)](./LICENSE)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
